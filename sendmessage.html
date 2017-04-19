@@ -1,0 +1,78 @@
+<div ng-controller='SendController'>
+    <table class='table'>
+        <thread>
+            <tbody>
+                <tr class='success'>
+                    <th style='text-align: center;'>student</th>
+                    <!--<th style='text-align: center;'>Subject</th>-->
+                    <th style='text-align: center;'>Class</th>
+                    <th style='text-align: center;'>basic info</th>
+                    <th style='text-align: center;'>Subjects</th>
+                    <th style='text-align: center;'>score</th>
+                    <th style='text-align: center;'>add</th>
+
+                </tr>
+                <tr class='danger'>
+                    <td>
+                        <label for='sel1'>Student name</label><br/>
+                        <input type='text' placeholder='basic info' ng-model='sname' />
+                    </td>
+                    <!--<td>
+                        <div class="form-group">
+                            <label for="sel1">Select list:</label>
+                            <select class="form-control" ng-init='subject=names[0]' id="sel1" ng-model='subject' ng-options="x for x in names">
+                    </select>
+                        </div>
+                    </td>-->
+                    <td>
+                        <div class="form-group">
+                            <label for="sel2">Select list:</label>
+                            <select class="form-control" ng-init='class=cname[0]' id="sel2" ng-model='class' ng-options="x for x in cname">
+                    </select>
+                        </div>
+                    </td>
+                    <td>
+                        <label for='sel1'>Input basic info</label><br/>
+                        <input type='text' placeholder='basic info' ng-model='pinfo' />
+                    </td>
+                    <td><label>Subject1</label><br/>
+                        {{subname[0]}}
+                    </td>
+                    <td>
+                        <label for='sel1'>Input score</label><br/>
+                        <input type='number' placeholder='score' ng-model='score' />
+                    </td>
+                    <td>
+                        <label for='sel1'>click submit</label><br/>
+                        <input type='submit' value='add' ng-click='atdata()' />
+                    </td>
+                </tr>
+                <tr class='danger'>
+                    <td></td><td></td><td></td><td><label>Subject2</label><br/>{{subname[1]}}</td>
+                    <td>
+                        <label >Input score</label><br/>
+                        <input type='number' placeholder='score' ng-model='score1' />
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class='danger'>
+                    <td></td><td></td><td></td><td><label>Subject3</label><br/>{{subname[2]}}</td>
+                    <td>
+                        <label >Input score</label><br/>
+                        <input type='number' placeholder='score' ng-model='score2' />
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class='danger'>
+                    <td></td><td></td><td></td><td><label>Subject4</label><br/>{{subname[3]}}</td>
+                    <td>
+                        <label >Input score</label><br/>
+                        <input type='number' placeholder='score' ng-model='score3' />
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </thread>
+    </table>
+    <input type='submit' value='Back' ng-click='back()' />
+</div>

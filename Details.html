@@ -1,0 +1,17 @@
+<div class="table-responsive">
+    <h1>Student Records</h1>
+    <table class="table">
+        <tr>
+            <th style='text-align: center;'>subject</th>
+            <th style='text-align: center;'>pinfo</th>
+            <th style='text-align: center;'>score</th>
+        </tr>
+        <tr ng-repeat='value in data'>
+            <td>{{value.Suname}}</td>
+            <td>{{value.pinfo}}</td>
+            <td>{{value.score}}</td>
+        </tr>
+    </table>
+    <div>Average Score is :{{CAverage(data)}}</div>
+    <input type='submit' value='Back' ng-click='back()'/>
+</div>

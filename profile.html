@@ -1,0 +1,30 @@
+<div class="table-responsive">
+    <table class="table">
+
+        <tr>
+            <th style='text-align: center;'>Class</th>
+            <th style='text-align: center;'>student name</th>
+            <th style='text-align: center;'>search button</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+
+                    <select class="form-control" ng-init='class=cname[0]' ng-model='class' ng-options="x for x in cname">
+                    </select>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <select class="form-control" ng-init='student=sname[0]' ng-model='student' ng-options="x for x in sname">
+                    </select>
+                </div>
+            </td>
+            <td>
+                <input type='submit' value='Find' ng-click='find()'/>
+            </td>
+        </tr>
+    </table>
+
+</div>
